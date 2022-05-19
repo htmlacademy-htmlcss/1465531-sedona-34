@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Идрисова](https://up.htmlacademy.ru/htmlcss/34/user/1465531).
-* Наставник: [Наталья Лукашина](https://up.htmlacademy.ru/htmlcss/34/user/814025).
+* Наставник: [Артур Гамиди](https://up.htmlacademy.ru/htmlcss/34/user/1931833).
 
 ---
 
