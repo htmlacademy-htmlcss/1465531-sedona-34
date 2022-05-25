@@ -1,0 +1,26 @@
+.subscribe-email-box {
+  display: flex;
+}
+
+.subscribe-input {
+  background-color: white;
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+}
+
+.subscribe-button {
+  background-color: lightblue;
+  border-radius: 0px 6px 6px 0px;
+  border: none;
+}
+
+/* .visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+} */
