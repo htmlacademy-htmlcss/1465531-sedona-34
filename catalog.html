@@ -107,19 +107,21 @@
 
       <div class="sorting-container">
         <p class="sorting-result">Найдено гостиниц: <span>38</span></p>
-        <select name="sort" aria-label="Сортировка">
-          <option value="sort-by-cheapest" selected>Сначала дешевые</option>
-          <option value="sort-by-popularity">Сначала популярные</option>
-          <option value="sort-by-newest">Сначала новые</option>
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap" selected>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
         </select>
-        <div class="card-grid">
-          <a class="card-grid-toggle">
+
+        <div class="toggler-wrapper">
+          <a class="toggler toggler-grid toggler-active" href="#">
             <span class="visually-hidden">Плитка</span>
           </a>
-          <a class="card-grid-toggle">
+          <a class="toggler toggler-gallery" href="#">
             <span class="visually-hidden">Галерея</span>
           </a>
-          <a class="card-grid-toggle">
+          <a class="toggler toggler-list" href="#">
             <span class="visually-hidden">Список</span>
           </a>
         </div>
