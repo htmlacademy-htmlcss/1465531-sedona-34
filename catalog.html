@@ -9,57 +9,57 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <a class="main-header-logo">
-        <img src="https://via.placeholder.com/139x70" width="139" height="70" alt="Логотип города Седона" />
+      <a class="main-header-logo" href="index.html">
+        <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип города Седона" />
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a href="#">Главная</a>
+            <a class="site-navigation-link" href="index.html">Главная</a>
           </li>
           <li class="site-navigation-item">
-            <a href="#">О Седоне</a>
+            <a class="site-navigation-link" href="#">О Седоне</a>
           </li>
           <li class="site-navigation-item">
-            <a href="catalog.html">Гостиницы</a>
+            <a class="site-navigation-link site-navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation-item">
-            <a class="search" href="#">
+            <a class="user-navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="user-navigation-item">
-            <a class="favorite" href="#">
+            <a class="user-navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="main-navigation__item-count">12</span>
             </a>
           </li>
           <li class="user-navigation-item">
-            <a class="button" href="#">Хочу сюда</a>
+            <a class="user-navigation-link" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="page-catalog container">
-    <div class="page-catalog-inner">
-      <h1 class="page-title">Гостиницы Седоны</h1>
+  <main class="main-inner container">
+    <div class="inner-container">
+    <header class="inner-header">
+      <h1 class="inner-header-title">Гостиницы Седоны</h1>
 
-      <nav class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">Главная</span>
-            </a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ol>
+    </header>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
@@ -107,19 +107,21 @@
 
       <div class="sorting-container">
         <p class="sorting-result">Найдено гостиниц: <span>38</span></p>
-        <select name="sort" aria-label="Сортировка">
-          <option value="sort-by-cheapest" selected>Сначала дешевые</option>
-          <option value="sort-by-popularity">Сначала популярные</option>
-          <option value="sort-by-newest">Сначала новые</option>
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap" selected>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
         </select>
-        <div class="card-grid">
-          <a class="card-grid-toggle">
+
+        <div class="toggler-wrapper">
+          <a class="toggler toggler-grid toggler-active" href="#">
             <span class="visually-hidden">Плитка</span>
           </a>
-          <a class="card-grid-toggle">
+          <a class="toggler toggler-gallery" href="#">
             <span class="visually-hidden">Галерея</span>
           </a>
-          <a class="card-grid-toggle">
+          <a class="toggler toggler-list" href="#">
             <span class="visually-hidden">Список</span>
           </a>
         </div>
@@ -129,7 +131,7 @@
         <li class="sorting-item">
           <article class="card">
             <a class="card-link" href="#">
-              <img class="card-img" src="https://via.placeholder.com/300x211" width="300" height="211"
+              <img class="card-img" src="images/hotel-amara-resort.jpg" width="300" height="211"
                 alt="Amara Resort & Spa" />
             </a>
             <a class="card-link" href="#">
@@ -152,7 +154,7 @@
         <li>
           <article class="card">
             <a class="card-link" href="#">
-              <img class="card-img" src="https://via.placeholder.com/300x211" width="300" height="211"
+              <img class="card-img" src="images/hotel-villas-at-poco-diablo.jpg" width="300" height="211"
                 alt="Villas at Poco Diablo" />
             </a>
             <a class="card-link" href="#">
@@ -175,7 +177,7 @@
         <li>
           <article class="card">
             <a class="card-link" href="#">
-              <img class="card-img" src="https://via.placeholder.com/300x211" width="300" height="211"
+              <img class="card-img" src="images/hotel-desert-quail-inn.jpg" width="300" height="211"
                 alt="Desert Quail Inn" />
             </a>
             <a class="card-link" href="#">
@@ -198,7 +200,7 @@
         <li>
           <article class="card">
             <a class="card-link" href="#">
-              <img class="card-img" src="https://via.placeholder.com/300x211" width="300" height="211"
+              <img class="card-img" src="images/hotel-greentree-inn.jpg" width="300" height="211"
                 alt="GreenTree Inn" />
             </a>
             <a class="card-link" href="#">
@@ -229,13 +231,12 @@
         <li class="pagination-item"><a href="#">10</a></li>
       </ul>
 
-      <div class="">
+      <div class="sorting-select">
         <p>Гостиниц на странице:</p>
-        <select class="cards-amount" name="ads-amount">
+        <select class="sorting-cards-amount" name="ads-amount" aria-label="Выводить гостиниц на странице">
           <option value="4" selected>4</option>
-          <option value="6">6</option>
-          <option value="8">8</option>
-          <option value="10">10</option>
+          <option value="6">8</option>
+          <option value="8">16</option>
         </select>
       </div>
     </section>
@@ -243,15 +244,15 @@
 
   <footer class="main-footer">
     <div class="container">
-      <section class="footer-subscription">
-        <h2 class="visually-hidden">Форма подписки</h2>
+      <section class="newsletter">
+        <h2 class="subtitle newsletter-subtitle">Подпишитесь на рассылку</h2>
 
-        <b>Подпишитесь на рассылку</b>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="subscribe-email-box">
-            <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail" required />
-            <button class="subscribe-button" type="submit">Подписаться</button>
+        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="newsletter-wrapper">
+            <label class="visually-hidden" for="email">Ваш e-mail </label>
+            <input class="newsletter-input" type="email" name="email" placeholder="Ваш e-mail" required id="email">
+            <button class="newsletter-button" type="submit">Подписаться</button>
           </div>
         </form>
       </section>
@@ -259,31 +260,29 @@
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
 
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="https://vk.com/htmlacademy" target="_blank">
+        <ul class="contacts-social-list">
+          <li class="contacts-social-item">
+            <a class="contacts-social-button" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Vkontakte</span>
               <!-- <svg></svg> -->
             </a>
           </li>
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="https://t.me/htmlacademy" target="_blank">
+          <li class="contacts-social-item">
+            <a class="contacts-social-button" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Telegram</span>
               <!-- <svg></svg> -->
             </a>
           </li>
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <li class="contacts-social-item">
+            <a class="contacts-social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <span class="visually-hidden">Youtube</span>
               <!-- <svg></svg> -->
             </a>
           </li>
         </ul>
-        <p class="footer-phone">
-          <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </p>
-        <a class="footer-copyright-link" href="https://htmlacademy.ru/">
-          <img class="footer-copyright-logo" src="https://via.placeholder.com/130x45" width="130" height="45" alt="Ссылка на главную страницу сайта разработчика HTML Academy" />
+        <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="contacts-copyright-link" href="https://htmlacademy.ru/">
+          <img class="contacts-copyright-logo" src="images/logo-htmlacademy.svg" width="130" height="45" alt="Ссылка на главную страницу сайта разработчика HTML Academy" />
         </a>
       </section>
     </div>
