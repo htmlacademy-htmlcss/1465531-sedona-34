@@ -37,6 +37,17 @@
 
 /*Global*/
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,8 +71,11 @@
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  color: var(--black);
+  background-color: var(--lighten-gray);
+  padding: 40px;
+}
 
+.container {
   background-color: var(--white);
 }
 
@@ -78,8 +92,7 @@
 .wrapper {
   color: var(--white);
   background-color: var(--dark-blue);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .inner {
@@ -112,6 +125,7 @@
 }
 
 .button-large {
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -123,6 +137,7 @@
 }
 
 .button-small {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -195,7 +210,7 @@
   line-height: 21px;
 }
 
-.advantages-item:not(:first-child):not(:nth-child(5)) .advantages-text {
+.advantages-text-custom-color {
   color: var(--dark-gray);
 }
 
@@ -246,7 +261,6 @@
 }
 
 .filters-form-reset {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -254,16 +268,9 @@
 
 /* Sorting */
 
-.select-control {
-  display: block;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--dark-gray);
-}
-
+.select-control,
 .sorting-select-wrapper>* {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: var(--dark-gray);
