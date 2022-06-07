@@ -72,7 +72,8 @@ img {
   line-height: 26px;
   font-weight: 400;
   background-color: var(--lighten-gray);
-  padding: 40px;
+  padding: 0 40px;
+  margin: 0;
 }
 
 .container {
