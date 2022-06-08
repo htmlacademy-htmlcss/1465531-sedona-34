@@ -251,12 +251,12 @@ img {
 
 /* Filters */
 
-.filters-form-element legend {
+.filters-form-element-legend {
   font-weight: 700;
   font-size: 20px;
 }
 
-.filters-form-element label {
+.filters-form-element-label {
   font-size: 18px;
   line-height: 21px;
 }

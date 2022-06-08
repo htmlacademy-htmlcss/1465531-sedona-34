@@ -68,30 +68,30 @@
 
         <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filters-form-element">
-            <legend>Инфраструктура:</legend>
+            <legend class="filters-form-element-legend">Инфраструктура:</legend>
             <input type="checkbox" name="features" value="pool" id="filter-pool" checked />
-            <label for="filter-pool">Бассейн</label>
+            <label class="filters-form-element-label" for="filter-pool">Бассейн</label>
             <input type="checkbox" name="features" value="parking" id="filter-parking" checked />
-            <label for="filter-parking">Парковка</label>
+            <label class="filters-form-element-label" for="filter-parking">Парковка</label>
             <input type="checkbox" name="features" value="wifi" id="filter-features" />
-            <label for="filter-features">Wi-Fi</label>
+            <label class="filters-form-element-label" for="filter-features">Wi-Fi</label>
           </fieldset>
           <fieldset class="filters-form-element">
-            <legend>Тип Жилья:</legend>
+            <legend class="filters-form-element-legend">Тип Жилья:</legend>
             <input type="radio" name="type" value="hotel" id="filter-hotel" checked />
-            <label for="filter-hotel">Гостиница</label>
+            <label class="filters-form-element-label" for="filter-hotel">Гостиница</label>
             <input type="radio" name="type" value="motel" id="filter-motel" />
-            <label for="filter-motel">Мотель</label>
+            <label class="filters-form-element-label" for="filter-motel">Мотель</label>
             <input type="radio" name="type" value="apartment" id="filter-apartment" />
-            <label for="filter-apartment">Апартаменты</label>
+            <label class="filters-form-element-label" for="filter-apartment">Апартаменты</label>
           </fieldset>
           <fieldset class="filters-form-element">
-            <legend>Стоимость, &#x20bd;</legend>
-            <label>
+            <legend class="filters-form-element-legend">Стоимость, &#x20bd;</legend>
+            <label class="filters-form-element-label">
               <input type="number" name="min-price" value="0" />
               <span>от</span>
             </label>
-            <label>
+            <label class="filters-form-element-label">
               <input type="number" name="max-price" value="100" />
               <span>до</span>
             </label>
