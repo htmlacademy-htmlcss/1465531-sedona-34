@@ -66,21 +66,37 @@ img {
 }
 
 .page-body {
+  min-width: 1280px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   background-color: var(--lighten-gray);
-  padding: 0 40px;
   margin: 0;
 }
 
-.container {
+.main-container {
+  max-width: 1200px;
   background-color: var(--white);
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
 }
 
 /* Pages */
+
+.main-navigation-list,
+.advantages-list,
+.sorting-list,
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .main-navigation-link {
   font-size: 20px;
