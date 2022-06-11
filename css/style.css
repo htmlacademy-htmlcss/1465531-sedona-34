@@ -327,6 +327,20 @@ img {
 
 /* Contacts */
 
+.contacts {
+  display: flex;
+}
+
+.contacts-social-list {
+  width: 142px;
+  margin-right: 236px;
+}
+
+.contacts-copyright-link {
+  margin-left: auto;
+  width: 115px;
+}
+
 .contacts-phone-link {
   font-weight: 400;
   font-size: 40px;
