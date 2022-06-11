@@ -318,6 +318,13 @@ img {
   margin: 0 auto;
 }
 
+/* Newsletter */
+
+.newsletter-paragraph {
+  width: 475px;
+  margin: 0 auto;
+}
+
 /* Contacts */
 
 .contacts-phone-link {
