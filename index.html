@@ -11,45 +11,47 @@
 <body class="page-body index-page">
   <header class="main-header">
     <div class="page-container">
-      <a class="main-header-logo">
-        <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип города Седона"/>
-      </a>
-      <nav class="main-navigation">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link main-navigation-link-current" href="#">Главная</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="main-navigation__item-count">12</span>
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link button-small button-link" href="#">Хочу сюда</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="content-container">
+        <a class="main-header-logo">
+          <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип города Седона"/>
+        </a>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
+              <a class="main-navigation-link main-navigation-link-current" href="#">Главная</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="main-navigation__item-count">12</span>
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link button-small button-link" href="#">Хочу сюда</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="page-main page-container">
     <h1 class="visually-hidden">Седона</h1>
 
-    <section class="promo wrapper">
+    <section class="promo decoration-wrapper">
       <h2 class="visually-hidden">Промо</h2>
 
       <div class="promo-inner">
@@ -128,7 +130,7 @@
 
   <footer class="main-footer">
     <div class="page-container">
-      <section class="newsletter index-newsletter wrapper">
+      <section class="newsletter index-newsletter decoration-wrapper">
         <div class="newsletter-inner inner">
           <h2 class="newsletter-title title">Подпишитесь на рассылку</h2>
 
@@ -142,31 +144,33 @@
           </form>
         </div>
       </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="content-container">
+        <section class="contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
 
-        <ul class="contacts-social-list">
-          <li class="contacts-social-item">
-            <a class="contacts-social-button" href="https://vk.com/htmlacademy" target="_blank">
-              <span class="visually-hidden">Vkontakte</span>
-            </a>
-          </li>
-          <li class="contacts-social-item">
-            <a class="contacts-social-button" href="https://t.me/htmlacademy" target="_blank">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-          <li class="contacts-social-item">
-            <a class="contacts-social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="contacts-copyright-link" href="https://htmlacademy.ru/">
-          <img class="contacts-copyright-logo" src="images/logo-htmlacademy.svg" width="130" height="45" alt="Ссылка на главную страницу сайта разработчика HTML Academy" />
-        </a>
-      </section>
+          <ul class="contacts-social-list">
+            <li class="contacts-social-item">
+              <a class="contacts-social-button" href="https://vk.com/htmlacademy" target="_blank">
+                <span class="visually-hidden">Vkontakte</span>
+              </a>
+            </li>
+            <li class="contacts-social-item">
+              <a class="contacts-social-button" href="https://t.me/htmlacademy" target="_blank">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="contacts-social-item">
+              <a class="contacts-social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-copyright-link" href="https://htmlacademy.ru/">
+            <img class="contacts-copyright-logo" src="images/logo-htmlacademy.svg" width="130" height="45" alt="Ссылка на главную страницу сайта разработчика HTML Academy" />
+          </a>
+        </section>
+      </div>
     </div>
   </footer>
 </body>

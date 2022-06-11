@@ -87,6 +87,11 @@ img {
   margin: 0 auto;
 }
 
+.content-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 /* Pages */
 
 .main-navigation-list,
@@ -106,7 +111,7 @@ img {
   text-decoration: none;
 }
 
-.wrapper {
+.decoration-wrapper {
   color: var(--white);
   background-color: var(--dark-blue);
   background-size: cover;
