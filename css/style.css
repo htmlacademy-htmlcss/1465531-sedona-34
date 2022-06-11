@@ -311,6 +311,13 @@ img {
   background-image: url("../images/newsletter-background.jpg");
 }
 
+/* Search */
+
+.search-paragraph {
+  width: 592px;
+  margin: 0 auto;
+}
+
 /* Contacts */
 
 .contacts-phone-link {
