@@ -97,7 +97,9 @@ img {
 .main-navigation-list,
 .advantages-list,
 .sorting-list,
-.pagination-list {
+.pagination-list,
+.filters-features-list,
+.filters-type-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -369,6 +371,19 @@ img {
 
 /* Filters */
 
+.filters-form {
+  display: flex;
+}
+
+.filters-form-element {
+  border: none;
+  padding: 0;
+}
+
+.filters-form-element:first-child {
+  width: 150px;
+}
+
 .filters-form-element-legend {
   font-weight: 700;
   font-size: 20px;
@@ -387,6 +402,10 @@ img {
 
 /* Sorting */
 
+.sorting-container {
+  display: flex;
+}
+
 .select-control,
 .sorting-select-wrapper>* {
   font-family: inherit;
@@ -395,7 +414,28 @@ img {
   color: var(--dark-gray);
 }
 
+.sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sorting-item {
+  padding: 20px;
+}
+
+.sorting-item:not(:nth-child(3n)) {
+  margin-right: 18px;
+}
+
 /* Pagination */
+
+.pagination-wrapper {
+  display: flex;
+}
+
+.pagination-list {
+  display: flex;
+}
 
 .pagination-link {
   font-size: 20px;
@@ -404,6 +444,11 @@ img {
   text-align: center;
   color: var(--white);
   text-decoration: none;
+}
+
+.sorting-select-wrapper {
+  display: flex;
+  margin-left: auto;
 }
 
 /* Card */
