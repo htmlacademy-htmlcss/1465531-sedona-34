@@ -188,6 +188,38 @@ img {
   background-color: var(--lighten-gray);
 }
 
+/* Header */
+
+.main-header-logo {
+  margin-right: 47px;
+}
+
+.header-layout {
+  display: flex;
+}
+
+/* Navigation */
+
+.main-navigation {
+  display: flex;
+  flex-grow: 1;
+}
+
+.site-navigation {
+  display: flex;
+  width: 530px;
+}
+
+.user-navigation {
+  display: flex;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.site-navigation .main-navigation-item + .main-navigation-item {
+  margin-left: 34px;
+}
+
 /* Promo */
 
 .promo {
