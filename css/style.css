@@ -247,7 +247,14 @@ img {
 }
 
 .advantages-item div {
+  display: flex;
+  flex-direction: column;
   width: 400px;
+}
+
+.advantages-item div>* {
+  width: 230px;
+  overflow: hidden;
 }
 
 .advantages-item-wrapper {
