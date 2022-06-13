@@ -408,11 +408,17 @@ img {
 }
 
 .select-control,
-.sorting-select-wrapper>* {
+.sorting-select-wrapper,
+.sorting-cards-amount {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: var(--dark-gray);
+}
+
+.sorting-select-wrapper {
+  display: flex;
+  margin-left: auto;
 }
 
 .sorting-list {
@@ -445,11 +451,6 @@ img {
   text-align: center;
   color: var(--white);
   text-decoration: none;
-}
-
-.sorting-select-wrapper {
-  display: flex;
-  margin-left: auto;
 }
 
 /* Card */
