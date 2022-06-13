@@ -75,7 +75,7 @@ img {
   line-height: 26px;
   font-weight: 400;
   background-color: var(--lighten-gray);
-  margin: 0 auto;
+  margin: 0;
 }
 
 .page-main {
@@ -255,13 +255,15 @@ img {
   background-color: var(--bg-primary);
 }
 
-.advantages-item div {
+.advantages-wrapper {
   display: flex;
   flex-direction: column;
   width: 400px;
 }
 
-.advantages-item div>* {
+.advantages-subtitle,
+.advantages-number,
+.advantages-text {
   width: 230px;
   overflow: hidden;
 }
