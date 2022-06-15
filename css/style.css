@@ -77,14 +77,18 @@ img {
   margin: 0;
 }
 
-.page-main {
-  flex-grow: 1;
-}
-
 .page-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 1200px;
   background-color: var(--white);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
+}
+
+.page-main {
+  flex-grow: 1;
 }
 
 .content-container {
