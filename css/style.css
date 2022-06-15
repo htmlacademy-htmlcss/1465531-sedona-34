@@ -237,6 +237,10 @@ img {
   padding: 20px 0;
 }
 
+.main-navigation-link-current {
+  border-bottom: 2px solid var(--darken-orange);
+}
+
 .main-navigation-link:hover {
   border-bottom: 2px solid var(--darken-orange);
 }
