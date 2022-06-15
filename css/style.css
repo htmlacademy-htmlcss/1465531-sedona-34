@@ -47,7 +47,6 @@
 img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
 .visually-hidden {
@@ -323,6 +322,10 @@ img {
 
 .advantages-text-custom-color {
   color: var(--dark-gray);
+}
+
+.advantages-image {
+  object-fit: cover;
 }
 
 /* Newsletter */
