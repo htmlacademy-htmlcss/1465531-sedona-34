@@ -349,7 +349,10 @@ img {
 }
 
 .contacts-social-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 142px;
+  list-style-type: none;
   margin-right: 236px;
 }
 
@@ -379,6 +382,12 @@ img {
   line-height: 78px;
 }
 
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -388,6 +397,7 @@ img {
 
 .filters-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filters-form-element {
