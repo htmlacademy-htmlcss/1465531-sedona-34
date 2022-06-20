@@ -234,6 +234,11 @@ img {
   padding: 20px 0 18px;
 }
 
+.user-navigation-link {
+  padding: 0;
+  margin: 0;
+}
+
 .main-navigation-link-current {
   border-bottom: 2px solid var(--darken-orange);
 }
@@ -459,7 +464,7 @@ img {
   margin: 0 0 10px;
 }
 
-.breadcrumbs__list {
+.breadcrumbs-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
