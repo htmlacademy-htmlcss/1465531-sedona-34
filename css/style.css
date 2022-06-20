@@ -384,11 +384,11 @@ img {
 }
 
 .newsletter-title {
-  margin: 0 auto 29px;
+  margin: 0 0 29px;
 }
 
 .newsletter-paragraph {
-  margin: 0 auto 46px;
+  margin: 0 0 46px;
 }
 
 .newsletter-input-container {
@@ -406,7 +406,6 @@ img {
 }
 
 .newsletter-button {
-  flex-shrink: 0;
   min-width: 200px;
   border-radius: 0 10px 10px 0;
   padding: 12px 15px;
