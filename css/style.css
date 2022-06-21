@@ -241,6 +241,12 @@ img {
   border-bottom: 2px solid var(--darken-orange);
 }
 
+.user-navigation-link {
+  min-width: 42px;
+  min-height: 66px;
+  text-decoration: none;
+}
+
 .user-navigation-button-link {
   min-width: 160px;
   padding: 9px 15px 8px;
@@ -425,6 +431,11 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0 auto 0 0;
+}
+
+.contacts-social-item {
+  width: 48px;
+  height: 40px;
 }
 
 .contacts-copyright-link {
