@@ -596,13 +596,12 @@ img {
   padding: 20px;
 }
 
-.card h3,
-.card p {
-  margin: 0;
-}
-
 .card-image-link {
   grid-area: image;
+}
+
+.card-image {
+  display: block;
 }
 
 .card-subtitle-link {
@@ -615,16 +614,19 @@ img {
   font-size: 24px;
   line-height: 28px;
   color: var(--black);
+  margin: 0;
 }
 
 .card-type {
   grid-area: type;
   justify-self: start;
+  margin: 0;
 }
 
 .card-price {
   grid-area: price;
   justify-self: start;
+  margin: 0;
 }
 
 .card-button-more,
@@ -653,6 +655,7 @@ img {
   grid-area: raiting;
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
+  margin: 0;
 }
 
 /* Pagination */
