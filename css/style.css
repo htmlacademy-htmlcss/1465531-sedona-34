@@ -431,6 +431,7 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0 auto 0 0;
+  background-color: aqua;
 }
 
 .contacts-social-item {
@@ -531,6 +532,27 @@ img {
 .sorting-container {
   display: flex;
   margin-bottom: 56px;
+}
+
+.sorting-result {
+  margin: 0 auto 0 0;
+}
+
+.sorting-toggler-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  margin: 0 0 0 auto;
+}
+
+.sorting-toggler {
+  width: 48px;
+  height: 48px;
+  background-color: aqua;
+}
+
+.sorting-toggler:not(:last-child) {
+  margin-right: 8px;
 }
 
 .select-control,
