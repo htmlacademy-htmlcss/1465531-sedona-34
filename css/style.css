@@ -514,7 +514,7 @@ img {
 /* Sorting */
 
 .sorting {
-  padding-top: 55px;
+  padding: 55px 0 25px;
 }
 
 .sorting-container {
@@ -556,7 +556,7 @@ img {
 .pagination-wrapper {
   display: flex;
   border-top: 1px solid var(--lighten-gray);
-  padding: 30px 0 25px;
+  padding-top: 30px;
 }
 
 .pagination-list {
