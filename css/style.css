@@ -541,6 +541,7 @@ img {
 .sorting-toggler-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   width: 200px;
   margin: 0 0 0 auto;
 }
