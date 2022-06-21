@@ -98,7 +98,6 @@ img {
 /* Pages */
 
 .advantages-list,
-.sorting-list,
 .pagination-list,
 .filters-features-list,
 .filters-type-list {
@@ -572,17 +571,88 @@ img {
 }
 
 .sorting-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 66px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.sorting-item {
+/* Card */
+
+.card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-areas: "image image"
+                       "title title"
+                       "type price"
+                       "more favorite"
+                       "star raiting";
+  gap: 16px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--dark-gray);
   padding: 20px;
 }
 
-.sorting-item:not(:nth-child(3n)) {
-  margin-right: 18px;
+.card h3,
+.card p {
+  margin: 0;
+}
+
+.card-image-link {
+  grid-area: image;
+}
+
+.card-subtitle-link {
+  text-decoration: none;
+  grid-area: title;
+  justify-self: start;
+}
+
+.card-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.card-type {
+  grid-area: type;
+  justify-self: start;
+}
+
+.card-price {
+  grid-area: price;
+  justify-self: start;
+}
+
+.card-button-more,
+.card-button-favorite {
+  padding: 9px 15px 8px;
+}
+
+.card-button-more {
+  grid-area: more;
+}
+
+.card-button-favorite {
+  grid-area: favorite;
+}
+
+.card-star {
+  grid-area: star;
+}
+
+.card-raiting {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: var(--very-light-gray);
+  grid-area: raiting;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
 }
 
 /* Pagination */
@@ -605,34 +675,4 @@ img {
   min-width: 60px;
   text-decoration: none;
   padding: 12px 19px;
-}
-
-/* Card */
-
-.card-link {
-  color: var(--black);
-  text-decoration: none;
-}
-
-.card-subtitle {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.card-inner {
-  font-size: 18px;
-  line-height: 21px;
-  color: var(--dark-gray);
-}
-
-.card-inner-button {
-  padding: 9px 15px 8px;
-}
-
-.card-raiting {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: var(--very-light-gray);
 }
