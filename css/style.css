@@ -288,6 +288,7 @@ img {
 
 .advantages-wrapper {
   width: 400px;
+  min-height: 384px;
 }
 
 .advantages-item-wrapper {
@@ -542,7 +543,7 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 200px;
-  margin: 0 0 0 auto;
+  margin-left: auto;
 }
 
 .sorting-toggler {
@@ -619,13 +620,11 @@ img {
 
 .card-type {
   grid-area: type;
-  justify-self: start;
   margin: 0;
 }
 
 .card-price {
   grid-area: price;
-  justify-self: start;
   margin: 0;
 }
 
