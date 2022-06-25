@@ -97,7 +97,6 @@ img {
 
 /* Pages */
 
-.advantages-list,
 .pagination-list,
 .filters-features-list,
 .filters-type-list {
@@ -284,6 +283,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--bg-primary);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-wrapper {
@@ -302,6 +304,18 @@ img {
 .advantages-item-wrapper-secondary {
   padding: 103px 85px 102px;
 }
+
+.advantages-icon-home {
+ background: url("../images/icon-home.svg") no-repeat 50% 26%;
+}
+
+.advantages-icon-food {
+  background: url("../images/icon-food.svg") no-repeat 50% 26%;
+ }
+
+ .advantages-icon-souvenir {
+  background: url("../images/icon-souvenir.svg") no-repeat 50% 26%;
+ }
 
 .advantages-item:first-child,
 .advantages-item:nth-child(5) {
