@@ -500,14 +500,15 @@ img {
 .breadcrumbs-list {
   display: flex;
   flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 21px;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 21px;
+.breadcrumbs-item + .breadcrumbs-item {
+  margin-left: 26px;
 }
 
 /* Filters */
