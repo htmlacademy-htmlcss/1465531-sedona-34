@@ -21,13 +21,14 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --light-blue: #82B3D3;
   --lighten-blue: #83b3d3;
+  --light-blue: #82B3D3;
+  --medium-blue: #68a2ca;
   --dark-blue: #3f5e72;
   --green: #7db54f;
-  --light-gray: #e5e5e5;
-  --lighten-gray: #e6e6e6;
   --very-light-gray: #f2f2f2;
+  --lighten-gray: #e6e6e6;
+  --light-gray: #e5e5e5;
   --dark-gray: #333333;
   --light-red: #ff5757;
   --dark-orange: #756157;
@@ -574,11 +575,34 @@ img {
 .sorting-toggler {
   width: 48px;
   height: 48px;
-  background-color: aqua;
+  border: 2px solid var(--light-gray);
+  border-radius: 4px;
 }
 
 .sorting-toggler:not(:last-child) {
   margin-right: 8px;
+}
+
+.sorting-toggler-current,
+.sorting-toggler:hover,
+.sorting-toggler:active {
+  border-color: var(--black);
+}
+
+.sorting-toggler:focus {
+  border-color: var(--medium-blue);
+}
+
+.sorting-toggler-table {
+ background: url("../images/icon-table.svg") no-repeat center;
+}
+
+.sorting-toggler-slideshow {
+  background: url("../images/icon-slideshow.svg") no-repeat center;
+}
+
+.sorting-toggler-list {
+  background: url("../images/icon-list.svg") no-repeat center;
 }
 
 .select-control,
