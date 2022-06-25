@@ -254,8 +254,19 @@ img {
 /* Promo */
 
 .promo {
+  position: relative;
   background-image: url("../images/index-background.jpg");
   padding: 51px 0 82px;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
+  background: url("../images/divider.svg");
 }
 
 .promo-logo {
