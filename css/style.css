@@ -267,7 +267,7 @@ img {
   bottom: 0;
   width: 1200px;
   height: 57px;
-  background: url("../images/divider.svg");
+  background-image: url("../images/divider.svg");
 }
 
 .promo-logo {
@@ -318,15 +318,21 @@ img {
 }
 
 .advantages-icon-home {
- background: url("../images/icon-home.svg") no-repeat 50% 26%;
+ background-image: url("../images/icon-home.svg");
+ background-repeat: no-repeat;
+ background-position: 50% 26%;
 }
 
 .advantages-icon-food {
-  background: url("../images/icon-food.svg") no-repeat 50% 26%;
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 26%;
  }
 
  .advantages-icon-souvenir {
-  background: url("../images/icon-souvenir.svg") no-repeat 50% 26%;
+  background-image: url("../images/icon-souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 26%;
  }
 
 .advantages-item:first-child,
@@ -595,15 +601,21 @@ img {
 }
 
 .sorting-toggler-table {
- background: url("../images/icon-table.svg") no-repeat center;
+ background-image: url("../images/icon-table.svg");
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
 }
 
 .sorting-toggler-slideshow {
-  background: url("../images/icon-slideshow.svg") no-repeat center;
+  background-image: url("../images/icon-slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .sorting-toggler-list {
-  background: url("../images/icon-list.svg") no-repeat center;
+  background-image: url("../images/icon-list.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .select-control,
@@ -692,7 +704,24 @@ img {
 }
 
 .card-star {
+  height: 17px;
+  background-image: url("../images/icon-star.svg");
+  background-repeat: space;
+  align-self: center;
+  margin: 0;
   grid-area: star;
+}
+
+.card-star-four {
+  width: 89px;
+}
+
+.card-star-three {
+  width: 66px;
+}
+
+.card-star-two {
+  width: 42px;
 }
 
 .card-raiting {
