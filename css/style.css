@@ -197,14 +197,13 @@ img {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .main-navigation-list,
 .user-navigation-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -216,6 +215,7 @@ img {
 
 .user-navigation-list {
   max-width: 300px;
+  align-items: center;
 }
 
 .main-navigation-item {
@@ -241,6 +241,8 @@ img {
 }
 
 .user-navigation-link {
+  position: relative;
+  display: block;
   min-width: 42px;
   min-height: 66px;
   text-decoration: none;
@@ -250,6 +252,16 @@ img {
   min-width: 160px;
   padding: 9px 15px 8px;
   margin-left: 20px;
+}
+
+.user-navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: var(--black);
 }
 
 /* Promo */
