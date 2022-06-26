@@ -492,17 +492,40 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0 auto 0 0;
-  background-color: aqua;
 }
 
-.contacts-social-item {
-  width: 48px;
-  height: 40px;
+.contacts-social-link {
+  position: relative;
+  display: block;
+  min-width: 48px;
+  min-height: 40px;
+}
+
+.contacts-social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: var(--lighten-blue);
 }
 
 .contacts-copyright-link {
-  margin-left: auto;
+  position: relative;
+  display: block;
   width: 115px;
+  margin-left: auto;
+}
+
+.contacts-copyright-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: var(--black);
 }
 
 .contacts-phone-link {
