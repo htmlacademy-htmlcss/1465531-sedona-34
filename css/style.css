@@ -264,6 +264,23 @@ img {
   fill: var(--black);
 }
 
+.user-navigation-link-favorite::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: attr(data-number);
+  min-width: 20px;
+  min-height: 20px;
+  top: 15px;
+  left: 24px;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--green);
+  font-size: 10px;
+  line-height: 13px;
+}
+
 /* Promo */
 
 .promo {
