@@ -566,7 +566,29 @@ img {
 }
 
 .breadcrumbs-item + .breadcrumbs-item {
-  margin-left: 26px;
+  padding-left: 16px;
+  background-image: url("../images/icon-breadcrumps-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 6px 9px;
+  background-position: left center;
+  margin-left: 10px;
+}
+
+.breadcrumbs-link-home {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 21px;
+}
+
+.breadcrumbs-link-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: var(--white);
 }
 
 /* Filters */
