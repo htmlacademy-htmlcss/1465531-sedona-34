@@ -682,13 +682,17 @@ img {
 }
 
 .sorting-toggler-current,
-.sorting-toggler:hover,
-.sorting-toggler:active {
+.sorting-toggler:hover {
   border-color: var(--black);
 }
 
 .sorting-toggler:focus {
   border-color: var(--medium-blue);
+  outline: none;
+}
+
+.sorting-toggler:active {
+  border-color: var(--black);
 }
 
 .sorting-toggler-table {
