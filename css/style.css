@@ -562,6 +562,24 @@ img {
   text-transform: uppercase;
 }
 
+.contacts-phone-link:hover,
+.contacts-phone-link:focus {
+  color: var(--dark-orange);
+}
+
+.contacts-phone-link:active {
+  color: var(--link-active);
+}
+
+.contacts-copyright-link:hover .contacts-copyright-icon,
+.contacts-copyright-link:focus .contacts-copyright-icon {
+  fill: var(--dark-orange);;
+}
+
+.contacts-copyright-link:active .contacts-copyright-icon {
+  fill: var(--link-active);
+}
+
 /* Catalog page */
 
 .inner-header {
