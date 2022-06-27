@@ -36,6 +36,7 @@
 
   --bg-primary: rgba(131, 179, 211, 0.12);
   --bg-secondary: rgba(131, 179, 211, 0.2);
+  --link-active: rgba(117, 97, 87, 0.3);
 }
 
 /*Global*/
@@ -236,8 +237,22 @@ img {
   border-bottom: 2px solid var(--darken-orange);
 }
 
-.main-navigation-link:hover {
-  border-bottom: 2px solid var(--darken-orange);
+.main-navigation-link:hover,
+.main-navigation-link:focus {
+  color: var(--dark-orange);
+}
+
+.main-navigation-link:active {
+  color: var(--link-active);
+}
+
+.user-navigation-link:hover .user-navigation-icon,
+.user-navigation-link:focus .user-navigation-icon {
+  fill: var(--dark-orange);
+}
+
+.user-navigation-link:active .user-navigation-icon {
+  fill: var(--link-active);
 }
 
 .user-navigation-link {
