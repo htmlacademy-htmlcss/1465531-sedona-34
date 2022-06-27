@@ -37,6 +37,7 @@
   --bg-primary: rgba(131, 179, 211, 0.12);
   --bg-secondary: rgba(131, 179, 211, 0.2);
   --link-active: rgba(117, 97, 87, 0.3);
+  --social-active: rgba(104, 162, 202, 0.3);
 }
 
 /*Global*/
@@ -524,6 +525,15 @@ img {
   left: 0;
   margin: auto;
   fill: var(--lighten-blue);
+}
+
+.contacts-social-link:hover .contacts-social-icon,
+.contacts-social-link:focus .contacts-social-icon {
+  fill: var(--medium-blue);
+}
+
+.contacts-social-link:active .contacts-social-icon {
+  fill: var(--social-active);
 }
 
 .contacts-copyright-link {
