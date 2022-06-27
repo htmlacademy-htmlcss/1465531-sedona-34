@@ -26,6 +26,7 @@
   --medium-blue: #68a2ca;
   --dark-blue: #3f5e72;
   --green: #7db54f;
+  --medium-green: #6C9E42;
   --very-light-gray: #f2f2f2;
   --lighten-gray: #e6e6e6;
   --light-gray: #e5e5e5;
@@ -33,11 +34,13 @@
   --light-red: #ff5757;
   --dark-orange: #756157;
   --darken-orange: #756257;
+  --very-dark-orange: #615048;
 
   --bg-primary: rgba(131, 179, 211, 0.12);
   --bg-secondary: rgba(131, 179, 211, 0.2);
   --link-active: rgba(117, 97, 87, 0.3);
   --social-active: rgba(104, 162, 202, 0.3);
+  --link-text-active: rgba(255, 255, 255, 0.3);
 }
 
 /*Global*/
@@ -166,7 +169,27 @@ img {
   background-color: var(--light-blue);
 }
 
+.button-info:hover,
+.button-info:focus {
+  background-color: var(--medium-blue);
+}
+
+.button-info:active {
+  color: var(--link-text-active);
+  background-color: var(--light-blue);
+}
+
 .button-success {
+  background-color: var(--green);
+}
+
+.button-success:hover,
+.button-success:focus {
+  background-color: var(--medium-green);
+}
+
+.button-success:active {
+  color: var(--link-text-active);
   background-color: var(--green);
 }
 
@@ -175,7 +198,22 @@ img {
   background-color: var(--dark-orange);
 }
 
-.button-disabled {
+.button-link:hover,
+.button-link:focus {
+  background-color: var(--very-dark-orange);
+}
+
+.button-link:active {
+  color: var(--link-text-active);
+  background-color: var(--dark-orange);
+}
+
+.button:disabled {
+  color: var(--white);
+  background-color: var(--light-gray);
+}
+
+.button-current {
   color: var(--black);
   background-color: var(--very-light-gray);
 }
