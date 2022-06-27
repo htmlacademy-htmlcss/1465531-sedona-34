@@ -767,6 +767,7 @@ img {
 }
 
 .sorting-toggler {
+  position: relative;
   width: 48px;
   height: 48px;
   border: 2px solid var(--light-gray);
@@ -791,22 +792,14 @@ img {
   border-color: var(--black);
 }
 
-.sorting-toggler-table {
- background-image: url("../images/icon-table.svg");
- background-repeat: no-repeat;
- background-position: 50% 50%;
-}
-
-.sorting-toggler-slideshow {
-  background-image: url("../images/icon-slideshow.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.sorting-toggler-list {
-  background-image: url("../images/icon-list.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.sorting-toggler-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: var(--black);
 }
 
 .select-control,
