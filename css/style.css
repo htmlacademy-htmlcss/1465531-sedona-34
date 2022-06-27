@@ -573,7 +573,7 @@ img {
 
 .contacts-copyright-link:hover .contacts-copyright-icon,
 .contacts-copyright-link:focus .contacts-copyright-icon {
-  fill: var(--dark-orange);;
+  fill: var(--dark-orange);
 }
 
 .contacts-copyright-link:active .contacts-copyright-icon {
@@ -617,6 +617,21 @@ img {
   margin-left: 10px;
 }
 
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs-link[href]:hover {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.breadcrumbs-link[href]:active {
+  color: var(--white);
+  opacity: 0.3;
+}
+
 .breadcrumbs-link-home {
   position: relative;
   display: block;
@@ -632,6 +647,16 @@ img {
   left: 0;
   margin: auto;
   fill: var(--white);
+}
+
+.breadcrumbs-link-home:hover .breadcrumbs-link-icon {
+  fill: var(--white);
+  opacity: 0.6;
+}
+
+.breadcrumbs-link-home:active .breadcrumbs-link-icon {
+  fill: var(--white);
+  opacity: 0.3;
 }
 
 /* Filters */
