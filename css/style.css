@@ -888,24 +888,17 @@ img {
 }
 
 .card-star {
-  height: 17px;
-  background-image: url("../images/icon-star.svg");
-  background-repeat: space;
   align-self: center;
   margin: 0;
   grid-area: star;
 }
 
-.card-star-four {
-  width: 89px;
+.card-star-icon {
+  fill: var(--lighten-blue);
 }
 
-.card-star-three {
-  width: 66px;
-}
-
-.card-star-two {
-  width: 42px;
+.card-star-icon + .card-star-icon {
+  margin-left: 2px;
 }
 
 .card-raiting {
