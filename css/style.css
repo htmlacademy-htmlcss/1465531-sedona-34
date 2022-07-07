@@ -38,6 +38,8 @@
 
   --bg-primary: rgba(131, 179, 211, 0.12);
   --bg-secondary: rgba(131, 179, 211, 0.2);
+  --bg-modal-container: rgba(242, 242, 242, 0.8);
+  --bg-modal: rgba(0, 0, 0, 0.15);
   --link-active: rgba(117, 97, 87, 0.3);
   --social-active: rgba(104, 162, 202, 0.3);
   --link-text-active: rgba(255, 255, 255, 0.3);
@@ -934,4 +936,53 @@ img {
   min-width: 60px;
   text-decoration: none;
   padding: 12px 19px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-modal-container);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 70px 70px;
+  background-color: var(--white);
+  box-shadow: 0 25px 50px var(--bg-modal);
+  border-radius: 30px;
+  width: 715px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  height: 53px;
+  width: 53px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--very-light-gray);
+  background-image: url("../images/icon-modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 0 63px 0;
+}
+
+.modal-button {
+  min-width: 575px;
+  border-radius: 10px;
+  padding: 12px 26px;
 }
