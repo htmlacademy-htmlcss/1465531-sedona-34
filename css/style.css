@@ -763,16 +763,16 @@ img {
   border-radius: 4px;
 }
 
-.control:hover .control-mark {
+.control-checkbox:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control-mark {
+.control-checkbox:focus .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid var(--lighten-blue);
 }
 
-.control:active .control-mark {
+.control-checkbox:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -789,6 +789,28 @@ img {
   content: "";
   background-image: url("../images/icon-tick.svg");
 }
+
+/* Radio */
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  content: "";
+}
+
+.control-radio:focus .control-mark {
+  outline: 3px solid var(--lighten-blue);
+}
+
 
 /* Range */
 
