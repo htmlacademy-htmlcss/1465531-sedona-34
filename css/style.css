@@ -996,6 +996,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .modal-form-label {
@@ -1010,15 +1011,26 @@ input[type=text] {
 
 input[type=number] {
   width: 133px;
+  padding: 15px 0 14px 61px;
 }
 
 .modal-form-input {
   font-family:inherit;
   font-size: 18px;
   line-height: 21px;
+  color: rgba(0, 0, 0, 0.6);
   border: none;
   background-color: var(--very-light-gray);
   border-radius: 4px;
+}
+
+.modal-form-input:hover {
+  background-color: var(--lighten-gray);
+}
+
+.modal-form-input:focus {
+  background-color: var(--lighten-gray);
+  outline: 3px solid var(--lighten-blue);
 }
 
 .modal-button {
