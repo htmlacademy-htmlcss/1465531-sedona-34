@@ -897,6 +897,44 @@ img {
   right: -10px;
 }
 
+/* Select */
+
+.select {
+  position: relative;
+  display: flex;
+  width: 290px;
+}
+
+.select-control {
+  width: 100%;
+  padding: 14px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--dark-gray);
+  border: 2px solid var(--light-gray);
+  border-radius: 4px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: var(--medium-blue);
+}
+
+.select-control:active {
+  border-color: var(--dark-blue);
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 /* Sorting */
 
 .sorting {
@@ -956,7 +994,6 @@ img {
   fill: var(--black);
 }
 
-.select-control,
 .sorting-form,
 .sorting-cards-amount {
   font-family: inherit;
