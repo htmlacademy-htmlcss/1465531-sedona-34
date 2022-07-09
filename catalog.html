@@ -76,54 +76,63 @@
             <section class="filters">
               <h2 class="visually-hidden">Фильтр.</h2>
 
-              <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="filters-form-element">
-                  <legend class="filters-form-element-legend">Инфраструктура:</legend>
-                  <ul class="filters-features-list">
-                    <li class="filters-features-list-item">
-                      <input type="checkbox" name="features" value="pool" id="filter-pool" checked/>
-                      <label class="filters-form-element-label" for="filter-pool">Бассейн</label>
+              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="features" value="pool" checked/>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
+                      </label>
                     </li>
-                    <li class="filters-features-list-item">
-                      <input type="checkbox" name="features" value="parking" id="filter-parking" checked/>
-                      <label class="filters-form-element-label" for="filter-parking">Парковка</label>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="features" value="parking" checked/>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
+                      </label>
                     </li>
-                    <li class="filters-features-list-item">
-                      <input type="checkbox" name="features" value="wifi" id="filter-features"/>
-                      <label class="filters-form-element-label" for="filter-features">Wi-Fi</label>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="features" value="wifi"/>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filters-form-element">
-                  <legend class="filters-form-element-legend">Тип Жилья:</legend>
-                  <ul class="filters-type-list">
-                    <li class="filters-type-list-item">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Тип Жилья:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
                       <input type="radio" name="type" value="hotel" id="filter-hotel" checked/>
-                      <label class="filters-form-element-label" for="filter-hotel">Гостиница</label>
+                      <label class="control" for="filter-hotel">Гостиница</label>
                     </li>
-                    <li class="filters-type-list-item">
+                    <li class="catalog-filter-item">
                       <input type="radio" name="type" value="motel" id="filter-motel"/>
-                      <label class="filters-form-element-label" for="filter-motel">Мотель</label>
+                      <label class="control" for="filter-motel">Мотель</label>
                     </li>
-                    <li class="filters-type-list-item">
+                    <li class="catalog-filter-item">
                       <input type="radio" name="type" value="apartment" id="filter-apartment"/>
-                      <label class="filters-form-element-label" for="filter-apartment">Апартаменты</label>
+                      <label class="control" for="filter-apartment">Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filters-form-element">
-                  <legend class="filters-form-element-legend filters-form-element-legend-bottom">Стоимость, &#x20bd;</legend>
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title catalog-filter-title-bottom">Стоимость, &#x20bd;</legend>
                   <div class="range-form-wrapper">
-                    <label class="filters-form-element-label range-label">
+                    <label class="control range-label">
                       <input class="range-input range-input-min" type="number" name="min-price" value="0"/>
                       <span class="range-span">от</span>
                     </label>
-                    <label class="filters-form-element-label range-label">
+                    <label class="control range-label">
                       <input class="range-input range-input-max" type="number" name="max-price" value="9000"/>
                       <span class="range-span">до</span>
                     </label>
                   </div>
-                  <div class="filters-form-range range-scale">
+                  <div class="catalog-filter-range range-scale">
                     <div class="range-bar" style="left: 0; width: 228px">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -134,9 +143,9 @@
                     </div>
                   </div>
                 </fieldset>
-                <fieldset class="filters-form-element">
-                  <button class="filters-form-submit button button-small button-info" type="submit">Применить</button>
-                  <button class="filters-form-reset button-default" type="reset">Сбросить</button>
+                <fieldset class="catalog-filter-group">
+                  <button class="catalog-filter-submit button button-small button-info" type="submit">Применить</button>
+                  <button class="catalog-filter-reset button-default" type="reset">Сбросить</button>
                 </fieldset>
               </form>
             </section>

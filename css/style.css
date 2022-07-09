@@ -106,14 +106,6 @@ img {
 
 /* Pages */
 
-.pagination-list,
-.filters-features-list,
-.filters-type-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .decoration-wrapper {
   color: var(--white);
   background-color: var(--dark-blue);
@@ -690,29 +682,30 @@ img {
   opacity: 0.3;
 }
 
-/* Filters */
+/* Catalog filter */
 
-.filters-form {
+.catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  font-size: 18px;
+  line-height: 21px;
 }
 
-.filters-form-element {
+.catalog-filter-group {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.filters-form-element:first-child {
-  width: 150px;
+.catalog-filter-group:first-child {
   margin-right: 70px;
 }
 
-.filters-form-element:nth-child(2) {
+.catalog-filter-group:nth-child(2) {
   margin-right: 176px;
 }
 
-.filters-form-element:nth-child(4) {
+.catalog-filter-group:nth-child(4) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -720,31 +713,81 @@ img {
   width: 170px;
 }
 
-.filters-form-element-legend {
+.catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   padding: 0;
   margin-bottom: 30px;
 }
 
-.filters-form-element-legend-bottom {
+.catalog-filter-title-bottom {
   margin-bottom: 34px;
 }
 
-.filters-form-element-label {
-  font-size: 18px;
-  line-height: 21px;
+.catalog-filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.filters-form-submit {
+.catalog-filter-submit {
   min-width: 160px;
   padding: 14px 15px;
 }
 
-.filters-form-reset {
+.catalog-filter-reset {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+}
+
+/* Control */
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid var(--lighten-blue);
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:disabled + .control-mark {
+  background-color: var(--dark-gray);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  content: "";
+  background-image: url("../images/icon-tick.svg");
 }
 
 /* Range */
@@ -1035,6 +1078,9 @@ img {
 
 .pagination-list {
   display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-item:not(:last-child) {
