@@ -1325,6 +1325,13 @@ img {
   opacity: 0.3;
 }
 
+.modal-form-input[type=text]:active,
+.modal-form-input[type=number]:active {
+  color: var(--black);
+  background-color: var(--white);
+  outline: 2px solid var(--black);
+}
+
 .modal-message {
   position: absolute;
   top: 58px;
@@ -1385,6 +1392,10 @@ img {
   min-width: 575px;
   border-radius: 10px;
   padding: 12px 26px;
+}
+
+.modal-button:focus {
+  outline: 3px solid var(--darken-orange);
 }
 
 /* Tooltip */
