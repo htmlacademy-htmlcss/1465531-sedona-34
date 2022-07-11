@@ -1205,6 +1205,9 @@ img {
 
 .modal-close-button {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   top: 54px;
   right: 70px;
@@ -1213,10 +1216,15 @@ img {
   border: none;
   border-radius: 50%;
   background-color: var(--very-light-gray);
-  background-image: url("../images/icon-modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  content: "";
+  background-image: url("../images/icon-modal-close.svg");
 }
 
 .modal-title {
@@ -1296,15 +1304,25 @@ img {
   margin: 0;
 }
 
+.modal-close-button:hover,
 .modal-form-input[type=text]:hover,
 .modal-form-input[type=number]:hover {
   background-color: var(--lighten-gray);
 }
 
+.modal-close-button:focus,
 .modal-form-input[type=text]:focus,
 .modal-form-input[type=number]:focus {
   background-color: var(--lighten-gray);
   outline: 3px solid var(--lighten-blue);
+}
+
+.modal-close-button:active {
+  background-color: var(--lighten-gray);
+}
+
+.modal-close-button:active::before {
+  opacity: 0.3;
 }
 
 .modal-message {
@@ -1346,13 +1364,21 @@ img {
   right: 12px;
 }
 
+.modal-form-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.modal-form-quantity:hover .modal-form-icon {
+  fill: var(--black);
+}
+
 .modal-form-quantity:focus {
   outline: 3px solid var(--lighten-blue);
   border-radius: 4px;
 }
 
-.modal-form-icon {
-  fill: rgba(0, 0, 0, 0.3);
+.modal-form-quantity:active .modal-form-icon {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .modal-button {
