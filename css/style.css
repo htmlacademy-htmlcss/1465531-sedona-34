@@ -1044,6 +1044,10 @@ img {
   margin-left: auto;
 }
 
+.sorting-form-label {
+  margin-right: 51px;
+}
+
 .sorting-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
