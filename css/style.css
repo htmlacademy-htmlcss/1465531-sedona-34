@@ -750,6 +750,20 @@ img {
   text-align: center;
 }
 
+.catalog-filter-reset:hover {
+  opacity: 0.6;
+}
+
+.catalog-filter-reset:focus {
+  outline: 3px solid var(--lighten-blue);
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.catalog-filter-reset:active {
+  opacity: 0.3;
+}
+
 /* Control */
 
 .catalog-filter-item:not(:last-child) {
