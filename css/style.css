@@ -1234,6 +1234,10 @@ img {
   margin-bottom: 40px;
 }
 
+.modal-form-group-current-margin {
+  margin-right: 56px;
+}
+
 .modal-form-group-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1244,14 +1248,19 @@ img {
   font-size: 20px;
 }
 
+.modal-form-label-current-margin {
+  margin-right: 64px;
+}
+
 .modal-form-label-icon {
   position: relative;
   padding-right: 25px;
+  margin-right: 24px;
 }
 
 .modal-form-input[type=text] {
   width: 420px;
-  padding: 15px 20px;
+  padding: 14px 20px;
   font-family:inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1260,57 +1269,6 @@ img {
   background-color: var(--very-light-gray);
   border-radius: 4px;
   appearance: none;
-}
-
-.modal-form-input[type=text]::-webkit-outer-spin-button,
-.modal-form-input[type=text]::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
-.modal-form-input[type=text]:hover {
-  background-color: var(--lighten-gray);
-}
-
-.modal-form-input[type=text]:focus {
-  background-color: var(--lighten-gray);
-  outline: 3px solid var(--lighten-blue);
-}
-
-.modal-button {
-  min-width: 575px;
-  border-radius: 10px;
-  padding: 12px 26px;
-}
-
-.modal-message {
-  position: absolute;
-  top: 58px;
-  left: 155px;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.modal-error {
-  color: var(--light-red);
-}
-
-.modal-success {
-  color: var(--dark-gray);
-}
-
-/* Input type number */
-
-.modal-form-group-current-margin {
-  margin-right: 56px;
-}
-
-.modal-form-label-current-margin {
-  margin-right: 64px;
-}
-
-.modal-form-label-icon {
-  margin-right: 24px;
 }
 
 .modal-form-input[type=number] {
@@ -1327,10 +1285,39 @@ img {
   appearance: none;
 }
 
+.modal-form-input[type=text]::-webkit-outer-spin-button,
+.modal-form-input[type=text]::-webkit-inner-spin-button,
 .modal-form-input[type=number]::-webkit-outer-spin-button,
 .modal-form-input[type=number]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.modal-form-input[type=text]:hover,
+.modal-form-input[type=number]:hover {
+  background-color: var(--lighten-gray);
+}
+
+.modal-form-input[type=text]:focus,
+.modal-form-input[type=number]:focus {
+  background-color: var(--lighten-gray);
+  outline: 3px solid var(--lighten-blue);
+}
+
+.modal-message {
+  position: absolute;
+  top: 58px;
+  left: 155px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.modal-error {
+  color: var(--light-red);
+}
+
+.modal-success {
+  color: var(--dark-gray);
 }
 
 .modal-form-box {
@@ -1356,6 +1343,12 @@ img {
 
 .modal-form-icon {
   fill: rgba(0, 0, 0, 0.3);
+}
+
+.modal-button {
+  min-width: 575px;
+  border-radius: 10px;
+  padding: 12px 26px;
 }
 
 /* Tooltip */
