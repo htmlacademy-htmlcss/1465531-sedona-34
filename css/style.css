@@ -1265,8 +1265,11 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6);
-  border: none;
   background-color: var(--very-light-gray);
+  background-image: url(../images/icon-date.svg);
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  border: none;
   border-radius: 4px;
   appearance: none;
 }
