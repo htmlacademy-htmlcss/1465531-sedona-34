@@ -506,9 +506,14 @@ img {
 .newsletter-input {
   flex-grow: 1;
   min-width: 600px;
-  background-color: white;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.15);
+  background-color: var(--very-light-gray);
   border-radius: 10px 0 0 10px;
   border: none;
+  padding: 20px 22px 19px;
 }
 
 .newsletter-button {
