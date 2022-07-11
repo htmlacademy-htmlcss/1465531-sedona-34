@@ -1334,14 +1334,21 @@ img {
   align-self: center;
   border: none;
   background-color: transparent;
+  padding: 6px;
   cursor: pointer;
 }
 
 .modal-form-quantity-minus {
   left: 12px;
+  padding: 12px 6px;
 }
 .modal-form-quantity-plus {
   right: 12px;
+}
+
+.modal-form-quantity:focus {
+  outline: 3px solid var(--lighten-blue);
+  border-radius: 4px;
 }
 
 .modal-form-icon {
