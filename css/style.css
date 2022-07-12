@@ -242,7 +242,6 @@ img {
 
 .user-navigation-list {
   max-width: 300px;
-  align-items: center;
 }
 
 .main-navigation-item {
@@ -292,8 +291,8 @@ img {
 
 .user-navigation-button-link {
   min-width: 160px;
-  padding: 9px 15px 8px;
-  margin-left: 20px;
+  padding: 9px 8px;
+  margin: 14px 0 10px 20px;
 }
 
 .user-navigation-icon {
