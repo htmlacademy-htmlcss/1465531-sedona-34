@@ -736,11 +736,12 @@ img {
 
 .catalog-filter-submit {
   min-width: 160px;
-  padding: 14px 15px;
+  padding: 14px;
   margin-bottom: 20px;
 }
 
 .catalog-filter-reset {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -844,7 +845,7 @@ img {
 
 .range-input {
   width: 146px;
-  padding: 12px 0 11px 17px;
+  padding: 12px 17px 11px;
   font: inherit;
   color: var(--white);
   background-color: transparent;
