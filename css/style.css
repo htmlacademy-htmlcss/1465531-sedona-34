@@ -516,6 +516,19 @@ img {
   padding: 20px 22px 19px;
 }
 
+.newsletter-input:hover {
+  background-color: var(--lighten-gray);
+}
+
+.newsletter-input:focus {
+  background-color: var(--lighten-gray);
+  outline: 3px solid var(--lighten-blue);
+}
+
+.newsletter-input:active {
+  background-color: var(--lighten-gray);
+}
+
 .newsletter-button {
   min-width: 200px;
   border-radius: 0 10px 10px 0;
@@ -1056,6 +1069,20 @@ img {
   padding: 13px 20px;
   appearance: none;
   cursor: pointer;
+}
+
+.sorting-cards-amount:hover,
+.sorting-cards-amount:focus {
+  border-color: var(--medium-blue);
+}
+
+.sorting-cards-amount:active {
+  border-color: var(--dark-blue);
+}
+
+.sorting-cards-amount:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-form {
