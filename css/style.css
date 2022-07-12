@@ -1315,7 +1315,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6);
-  width: 60px;
+  width: 50px;
   background-color: inherit;
   text-align: center;
   border: none;
@@ -1329,6 +1329,10 @@ img {
 .modal-form-input[type=number]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.modal-form-input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .modal-close-button:hover,
