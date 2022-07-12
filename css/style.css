@@ -36,14 +36,6 @@
   --darken-orange: #756257;
   --very-dark-orange: #615048;
   --box-shadow: #81b3d2;
-
-  --bg-primary: rgba(131, 179, 211, 0.12);
-  --bg-secondary: rgba(131, 179, 211, 0.2);
-  --bg-modal-container: rgba(242, 242, 242, 0.8);
-  --bg-modal: rgba(0, 0, 0, 0.15);
-  --link-active: rgba(117, 97, 87, 0.3);
-  --social-active: rgba(104, 162, 202, 0.3);
-  --link-text-active: rgba(255, 255, 255, 0.3);
 }
 
 /*Global*/
@@ -170,7 +162,7 @@ img {
 }
 
 .button-info:active {
-  color: var(--link-text-active);
+  color: rgba(255, 255, 255, 0.3);
   background-color: var(--light-blue);
 }
 
@@ -184,7 +176,7 @@ img {
 }
 
 .button-success:active {
-  color: var(--link-text-active);
+  color: rgba(255, 255, 255, 0.3);
   background-color: var(--green);
 }
 
@@ -199,7 +191,7 @@ img {
 }
 
 .button-link:active {
-  color: var(--link-text-active);
+  color: rgba(255, 255, 255, 0.3);
   background-color: var(--dark-orange);
 }
 
@@ -277,7 +269,7 @@ img {
 }
 
 .main-navigation-link:active {
-  color: var(--link-active);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .user-navigation-link:hover .user-navigation-icon,
@@ -286,7 +278,7 @@ img {
 }
 
 .user-navigation-link:active .user-navigation-icon {
-  fill: var(--link-active);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .user-navigation-link {
@@ -372,7 +364,7 @@ img {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--bg-primary);
+  background-color: rgba(131, 179, 211, 0.12);
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -420,7 +412,7 @@ img {
 }
 
 .advantages-item:nth-child(7) {
-  background-color: var(--bg-secondary);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-subtitle {
@@ -574,7 +566,7 @@ img {
 }
 
 .contacts-social-link:active .contacts-social-icon {
-  fill: var(--social-active);
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-copyright-link {
@@ -609,7 +601,7 @@ img {
 }
 
 .contacts-phone-link:active {
-  color: var(--link-active);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .contacts-copyright-link:hover .contacts-copyright-icon,
@@ -618,7 +610,7 @@ img {
 }
 
 .contacts-copyright-link:active .contacts-copyright-icon {
-  fill: var(--link-active);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Catalog page */
@@ -910,7 +902,7 @@ img {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: var(--link-text-active);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
   width: 288px;
 }
@@ -1227,7 +1219,7 @@ img {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-modal-container);
+  background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
 }
 
@@ -1240,7 +1232,7 @@ img {
   margin: auto;
   padding: 62px 70px 70px 70px;
   background-color: var(--white);
-  box-shadow: 0 25px 50px var(--bg-modal);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   width: 715px;
 }
