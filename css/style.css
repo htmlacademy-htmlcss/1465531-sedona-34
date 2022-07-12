@@ -1284,10 +1284,6 @@ img {
   margin-bottom: 40px;
 }
 
-.modal-form-group-current-margin {
-  margin-right: 56px;
-}
-
 .modal-form-group-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1328,11 +1324,10 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6);
-  width: 133px;
-  background-color: var(--very-light-gray);
-  border: none;
-  border-radius: 4px;
+  width: 60px;
+  background-color: inherit;
   text-align: center;
+  border: none;
   padding: 15px 0;
   appearance: none;
 }
@@ -1356,6 +1351,10 @@ img {
 .modal-form-input[type=number]:focus {
   background-color: var(--lighten-gray);
   outline: 3px solid var(--lighten-blue);
+}
+
+.modal-form-input[type=number]:focus {
+  z-index: 1;
 }
 
 .modal-close-button:active {
@@ -1396,26 +1395,26 @@ img {
 }
 
 .modal-form-box {
-  position: relative;
   display: flex;
+  justify-content: center;
+  width: 133px;
+  background-color: var(--very-light-gray);
+  border: none;
+  border-radius: 4px;
 }
 
 .modal-form-quantity {
-  position: absolute;
   display: flex;
   align-self: center;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: inherit;
   border: none;
-  background-color: transparent;
   padding: 6px;
   cursor: pointer;
 }
 
 .modal-form-quantity-minus {
-  left: 12px;
   padding: 12px 6px;
-}
-.modal-form-quantity-plus {
-  right: 12px;
 }
 
 .modal-form-icon {
@@ -1429,6 +1428,7 @@ img {
 .modal-form-quantity:focus {
   outline: 3px solid var(--lighten-blue);
   border-radius: 4px;
+  z-index: 1;
 }
 
 .modal-form-quantity:active .modal-form-icon {
