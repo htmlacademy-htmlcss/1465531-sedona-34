@@ -1373,6 +1373,12 @@ img {
   outline: 2px solid var(--black);
 }
 
+.modal-form-input[type=text]:disabled,
+.modal-form-input[type=number]:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .modal-message {
   position: absolute;
   top: 58px;
