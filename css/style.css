@@ -530,6 +530,7 @@ img {
 
 .contacts {
   display: flex;
+  justify-content: space-between;
   padding: 45px 0 35px;
 }
 
@@ -539,7 +540,7 @@ img {
   width: 150px;
   list-style-type: none;
   padding: 0;
-  margin: 0 auto 0 0;
+  margin: 0;
 }
 
 .contacts-social-link {
@@ -566,10 +567,6 @@ img {
 
 .contacts-social-link:active .contacts-social-icon {
   fill: rgba(104, 162, 202, 0.3);
-}
-
-.contacts-copyright-link {
-  margin-left: auto;
 }
 
 .contacts-copyright-icon {
