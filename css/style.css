@@ -509,7 +509,7 @@ img {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.6);
   background-color: var(--very-light-gray);
   border-radius: 10px 0 0 10px;
   border: none;
