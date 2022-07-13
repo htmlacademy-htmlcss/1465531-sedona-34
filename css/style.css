@@ -22,11 +22,11 @@
   --black: #000000;
   --white: #ffffff;
   --lighten-blue: #83b3d3;
-  --light-blue: #82B3D3;
+  --light-blue: #82b3d3;
   --medium-blue: #68a2ca;
   --dark-blue: #3f5e72;
   --green: #7db54f;
-  --medium-green: #6C9E42;
+  --medium-green: #6c9e42;
   --very-light-gray: #f2f2f2;
   --lighten-gray: #e6e6e6;
   --light-gray: #e5e5e5;
@@ -881,7 +881,7 @@ img {
 
 .range-input:active {
   border-color: var(--white);
-  background-color: var(--darken-orange)
+  background-color: var(--darken-orange);
 }
 
 .range-input:disabled {
@@ -1051,7 +1051,7 @@ img {
   min-width: 165px;
   border: 2px solid var(--light-gray);
   border-radius: 4px;
-  background-image: url(../images/arrow.svg);
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 22px center;
   padding: 13px 20px;
@@ -1098,10 +1098,10 @@ img {
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-areas: "image image"
-                       "title title"
-                       "type price"
-                       "more favorite"
-                       "star raiting";
+    "title title"
+    "type price"
+    "more favorite"
+    "star raiting";
   gap: 16px 20px;
   font-size: 18px;
   line-height: 21px;
@@ -1295,12 +1295,12 @@ img {
 .modal-form-input[type=text] {
   width: 420px;
   padding: 14px 20px;
-  font-family:inherit;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6);
   background-color: var(--very-light-gray);
-  background-image: url(../images/icon-date.svg);
+  background-image: url("../images/icon-date.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   border: none;
