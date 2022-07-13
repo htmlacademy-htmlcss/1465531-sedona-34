@@ -852,7 +852,6 @@ img {
   background-color: transparent;
   border: 2px solid var(--white);
   appearance: textfield;
-  cursor: pointer;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -883,6 +882,11 @@ img {
 .range-input:active {
   border-color: var(--white);
   background-color: var(--darken-orange)
+}
+
+.range-input:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .range-span {
