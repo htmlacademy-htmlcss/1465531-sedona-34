@@ -994,10 +994,9 @@ img {
 }
 
 .sorting-toggler-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  min-width: 160px;
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  gap: 8px;
 }
 
 .sorting-toggler {
