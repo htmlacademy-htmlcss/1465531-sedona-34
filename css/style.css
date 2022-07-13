@@ -1309,7 +1309,7 @@ img {
 }
 
 .modal-form-input[type="number"] {
-  font-family:inherit;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6);
@@ -1318,7 +1318,7 @@ img {
   text-align: center;
   border: none;
   padding: 15px 0;
-  appearance: none;
+  appearance: textfield;
 }
 
 .modal-form-input[type="text"]::-webkit-outer-spin-button,
@@ -1327,10 +1327,6 @@ img {
 .modal-form-input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-.modal-form-input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .modal-close-button:hover,
@@ -1456,7 +1452,7 @@ img {
   border: none;
   border-radius: 50%;
   background-color: var(--lighten-blue);
-  background-image: url(../images/icon-info.svg);
+  background-image: url("../images/icon-info.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1px 9px;
@@ -1490,7 +1486,7 @@ img {
   display: block;
 }
 
-.tooltip-text:after {
+.tooltip-text::after {
   content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
