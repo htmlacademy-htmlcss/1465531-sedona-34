@@ -1292,7 +1292,7 @@ img {
   margin-right: 50px;
 }
 
-.modal-form-input[type=text] {
+.modal-form-input[type="text"] {
   width: 420px;
   padding: 14px 20px;
   font-family: inherit;
@@ -1308,7 +1308,7 @@ img {
   appearance: none;
 }
 
-.modal-form-input[type=number] {
+.modal-form-input[type="number"] {
   font-family:inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1321,10 +1321,10 @@ img {
   appearance: none;
 }
 
-.modal-form-input[type=text]::-webkit-outer-spin-button,
-.modal-form-input[type=text]::-webkit-inner-spin-button,
-.modal-form-input[type=number]::-webkit-outer-spin-button,
-.modal-form-input[type=number]::-webkit-inner-spin-button {
+.modal-form-input[type="text"]::-webkit-outer-spin-button,
+.modal-form-input[type="text"]::-webkit-inner-spin-button,
+.modal-form-input[type="number"]::-webkit-outer-spin-button,
+.modal-form-input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1334,19 +1334,19 @@ img {
 }
 
 .modal-close-button:hover,
-.modal-form-input[type=text]:hover,
-.modal-form-input[type=number]:hover {
+.modal-form-input[type="text"]:hover,
+.modal-form-input[type="number"]:hover {
   background-color: var(--lighten-gray);
 }
 
 .modal-close-button:focus,
-.modal-form-input[type=text]:focus,
-.modal-form-input[type=number]:focus {
+.modal-form-input[type="text"]:focus,
+.modal-form-input[type="number"]:focus {
   background-color: var(--lighten-gray);
   outline: 3px solid var(--lighten-blue);
 }
 
-.modal-form-input[type=number]:focus {
+.modal-form-input[type="number"]:focus {
   border-radius: 4px;
   z-index: 1;
 }
@@ -1359,15 +1359,15 @@ img {
   opacity: 0.3;
 }
 
-.modal-form-input[type=text]:active,
-.modal-form-input[type=number]:active {
+.modal-form-input[type="text"]:active,
+.modal-form-input[type="number"]:active {
   color: var(--black);
   background-color: var(--white);
   outline: 2px solid var(--black);
 }
 
-.modal-form-input[type=text]:disabled,
-.modal-form-input[type=number]:disabled {
+.modal-form-input[type="text"]:disabled,
+.modal-form-input[type="number"]:disabled {
   color: rgba(0, 0, 0, 0.3);
   border-color: rgba(0, 0, 0, 0.3);
 }
