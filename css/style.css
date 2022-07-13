@@ -520,6 +520,10 @@ img {
   background-color: var(--lighten-gray);
 }
 
+.newsletter-input:disabled {
+  background-color: rgba(109, 107, 107, 0.3);
+}
+
 .newsletter-button {
   min-width: 200px;
   border-radius: 0 10px 10px 0;
