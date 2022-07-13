@@ -784,23 +784,6 @@ img {
   border-radius: 4px;
 }
 
-.control-checkbox:hover .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.control-checkbox:focus .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
-  outline: 3px solid var(--lighten-blue);
-}
-
-.control-checkbox:active .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.control-input:disabled + .control-mark {
-  background-color: var(--dark-gray);
-}
-
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 5px;
@@ -809,6 +792,20 @@ img {
   height: 10px;
   content: "";
   background-image: url("../images/icon-tick.svg");
+}
+
+
+.control-input[type="checkbox"]:hover + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid var(--lighten-blue);
+}
+
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Radio */
@@ -828,10 +825,13 @@ img {
   content: "";
 }
 
-.control-radio:focus .control-mark {
+.control-input[type="radio"]:focus + .control-mark {
   outline: 3px solid var(--lighten-blue);
 }
 
+.control-input:disabled + .control-mark {
+  background-color: var(--dark-gray);
+}
 
 /* Range */
 
